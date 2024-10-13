@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - SpawnPoint
+  - BuildTower
+  - UpgradeTower
+  - Tower
+  - Enemy
+  - Plant
+  - Bullet
+  - SlideBuild
   layers:
   - Default
   - TransparentFX
@@ -11,7 +19,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - SpawnPoint
   - 
   - 
   - 

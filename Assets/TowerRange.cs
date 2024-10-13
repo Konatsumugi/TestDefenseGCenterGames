@@ -1,0 +1,18 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class TowerRange : MonoBehaviour
+{
+    public TowerDetail TowerDetail;
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        TowerDetail.OnChildTriggerEnter2D(other);
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        TowerDetail.OnChildTriggerExit2D(other);
+    }
+}
