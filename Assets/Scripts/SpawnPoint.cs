@@ -109,7 +109,7 @@ public class SpawnPoint : MonoBehaviour
             towerDetail.upgradePrice = towerData.updatePrice;
             towerDetail.cellPrice = towerData.cellPrice;
             textCell.text = towerData.cellPrice.ToString();
-            textUpgrade.text = towerData.buildPrice.ToString();
+            textUpgrade.text = towerData.updatePrice.ToString();
         }
     }
 

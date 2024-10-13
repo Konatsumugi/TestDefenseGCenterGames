@@ -25,8 +25,8 @@ public class TowerDetail : MonoBehaviour
     private Enemy CurrentEnemyTarget;
     public float ShootTime;
     public float ShootTimeMax;
-    private CircleCollider2D circleCollider;
 
+    // Theem quái vật vào tầm đánh của Tower
     public void OnChildTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Enemy"))
@@ -37,7 +37,6 @@ public class TowerDetail : MonoBehaviour
     }
     private void Awake()
     {
-        circleCollider= GameObject.Find("Range").GetComponent<CircleCollider2D>();
         ShootTimeMax = 1f;
     }
 
